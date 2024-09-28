@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Biblioteca = void 0;
-// import { Revista } from './revista';
-// import { CD } from './cd';
-// import { DVD } from './dvd';
 class Biblioteca {
     constructor() {
         this.acervo = [];
