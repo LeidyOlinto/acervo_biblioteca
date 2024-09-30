@@ -1,6 +1,6 @@
-import { Localizavel } from './localizavel';
+import { ILocalizavel } from '../../types/localizavel';
 
-export abstract class ItemAcervo implements Localizavel {
+export abstract class ItemAcervo implements ILocalizavel {
     id: number;
     titulo: string;
     autor: string;

@@ -1,9 +1,9 @@
 // src/index.ts
-import { Biblioteca } from './models/bilioteca';
-import { Livro } from './models/livro';
-import { Revista } from './models/revista';
-import { CD } from './models/cd';
-import { DVD } from './models/dvd';
+import { Biblioteca } from './models/biblioteca/bilioteca';
+import { Livro } from './models/biblioteca/livro';
+import { Revista } from './models/biblioteca/revista';
+import { CD } from './models/biblioteca/cd';
+import { DVD } from './models/biblioteca/dvd';
 
 // Instanciar a biblioteca
 const biblioteca = new Biblioteca();
