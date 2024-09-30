@@ -1,7 +1,7 @@
 import { ItemAcervo } from "./itemAcervo";
 
 export abstract class Midia extends ItemAcervo {
-  duracao: number; // Duração em minutos
+  duracao: number;
 
   constructor(
     id: number,

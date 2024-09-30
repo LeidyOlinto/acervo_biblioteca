@@ -2,7 +2,7 @@ import { ItemAcervo } from "./itemAcervo";
 
 export class Biblioteca {
   private acervo: ItemAcervo[] = [];
-  private nextId: number = 1;
+  private nextId = 1;
 
   // Função Genérica para Registrar Itens
   registrarItem<T extends ItemAcervo>(item: T) {
@@ -12,7 +12,7 @@ export class Biblioteca {
 
   // Listar todos os itens
   listarItens() {
-    return this.acervo;
+    return this.acervo.forEach((item) => console.log(item));
   }
 
   // Buscar item por ID
@@ -25,6 +25,7 @@ export class Biblioteca {
     const item = this.buscarItemPorId(id);
     if (item) {
       Object.assign(item, dadosAtualizados);
+      console.log(item);
       return true;
     }
     return false;
@@ -33,10 +34,11 @@ export class Biblioteca {
   // Remover item do acervo
   removerItem(id: number) {
     const itemIndex = this.acervo.findIndex((item) => item.id === id);
-    if (itemIndex === -1) {
-      return console.log("Item não identificado");
+    if (itemIndex !== -1) {
+      return this.acervo?.splice(itemIndex, 1);
     }
-    this.acervo.splice(itemIndex, 1);
+
+    console.log("Item não encontrado");
   }
 
   // Verificar disponibilidade do item

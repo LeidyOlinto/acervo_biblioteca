@@ -22,32 +22,29 @@ const biblioteca = new Biblioteca();
 // biblioteca.registrarItem(livro);
 
 // Criar e registrar uma revista
-// const revista = new Revista(
-//   0,
-//   "National Geographic",
-//   "Various",
-//   2023,
-//   "B2",
-//   "P3",
-//   "National Geographic Partners",
-//   150
-// );
+const revista = new Revista(
+  0,
+  "National Geographic",
+  "Various",
+  2023,
+  "B2",
+  "P3",
+  "National Geographic Partners",
+  150
+);
 
-// biblioteca.registrarItem(revista);
-
+biblioteca.registrarItem(revista);
 // Criar e registrar um CD
-// const cd = new CD(
-//   0,
-//   "Thriller",
-//   "Michael Jackson",
-//   1982,
-//   "C3",
-//   "P2",
-//   42,
-//   "Pop"
-// );
-
-// biblioteca.registrarItem(cd);
+const cd = new CD(
+  0,
+  "Thriller",
+  "Michael Jackson",
+  1982,
+  "C3",
+  "P2",
+  42,
+  "Pop"
+);
 
 // Criar e registrar um DVD
 const dvd = new DVD(
@@ -60,14 +57,5 @@ const dvd = new DVD(
   148,
   "PG-13"
 );
-biblioteca.registrarItem(dvd);
-
 // Listar todos os itens
-console.log("Acervo da Biblioteca:");
-biblioteca.listarItens().forEach((item) => {
-  console.log(
-    item.getInfo(),
-    item.getLocalizacao(),
-    `Disponível: ${item.disponibilidade}`
-  );
-});
+biblioteca.listarItens();
