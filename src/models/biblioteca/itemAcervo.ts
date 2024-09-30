@@ -25,7 +25,7 @@ export abstract class ItemAcervo implements ILocalizavel {
     this.prateleira = prateleira;
   }
 
-  getLocalizacao(): string {
+  getLocalizacao() {
     return `Estante: ${this.estante}, Prateleira: ${this.prateleira}`;
   }
 

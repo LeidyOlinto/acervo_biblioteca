@@ -11,7 +11,7 @@ export class Biblioteca {
   }
 
   // Listar todos os itens
-  listarItens(): ItemAcervo[] {
+  listarItens() {
     return this.acervo;
   }
 

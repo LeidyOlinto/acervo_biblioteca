@@ -15,6 +15,4 @@ export abstract class Publicacao extends ItemAcervo {
     super(id, titulo, autor, anoPublicacao, estante, prateleira);
     this.editora = editora;
   }
-
-  abstract getInfo(): string;
 }
