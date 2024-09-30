@@ -25,7 +25,6 @@ export class Biblioteca {
     const item = this.buscarItemPorId(id);
     if (item) {
       Object.assign(item, dadosAtualizados);
-      console.log(item);
       return true;
     }
     return false;
