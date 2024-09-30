@@ -1,5 +1,5 @@
 // src/index.ts
-import { Biblioteca } from "./models/biblioteca/bilioteca";
+import { Biblioteca } from "./models/biblioteca/biblioteca";
 import { Livro } from "./models/biblioteca/livro";
 import { Revista } from "./models/biblioteca/revista";
 import { CD } from "./models/biblioteca/cd";
