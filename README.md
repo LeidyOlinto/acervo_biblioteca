@@ -1,4 +1,5 @@
 📚 Biblioteca Online com TypeScript
+
 Descrição
 O Biblioteca Online com TypeScript é uma aplicação web que simula o sistema de gerenciamento de uma biblioteca, com o objetivo de organizar e controlar um acervo digital. A aplicação foi desenvolvida utilizando TypeScript, proporcionando tipagem estática e maior organização do código.
 
@@ -40,8 +41,9 @@ Permite adicionar qualquer tipo de ItemAcervo ao acervo, garantindo a tipagem co
 Lógica de Negócio:
 
 Implementada para garantir o funcionamento correto do sistema, como validação da disponibilidade de itens antes de qualquer operação.
-Tecnologias Utilizadas
+
+Tecnologias Utilizadas:
+
 TypeScript: Linguagem principal utilizada no projeto, para garantir a segurança e a escalabilidade do código.
-HTML5 & CSS3: Estrutura e estilização da aplicação.
 Node.js: Para gerenciamento de pacotes e execução do TypeScript.
 Webpack: Para empacotamento e otimização dos arquivos do projeto.
